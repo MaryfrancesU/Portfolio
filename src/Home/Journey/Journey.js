@@ -3,14 +3,16 @@ import React from 'react';
 import {useState, useEffect} from 'react';
 import MobileRoad from './MobileRoad/MobileRoad';
 import DesktopRoad from './DesktopRoad/DesktopRoad';
+import useWindowDimensions from '../../hooks/useWindowDimensions';
 
 const Journey = () => {
 
-    const [isMobile, setIsMobile ] = useState(true);
+    const { width } = useWindowDimensions();
+    const [ isMobile ] = useState((width <= 820) ?  true : false);
 
     useEffect(() => {
-      setIsMobile(true);
-    }, [])
+      console.log("isMobile " + isMobile);
+    })
     
 
     return (
