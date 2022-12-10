@@ -2,7 +2,13 @@
     @media (max-width: 600px){
         @content;
     }
- }
+}
+
+@mixin mobile-and-tablet {
+    @media (max-width: 830px){
+        @content;
+    }
+}
 
  
 @mixin gradientText($gradient) {

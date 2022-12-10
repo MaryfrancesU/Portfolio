@@ -1,11 +1,17 @@
 /** COLORS **/
 
-//gradient colors
+//color variables
+$dark-magenta: rgb(114, 8, 66);
+
+//default gradient colors
 $base-pink: rgba(247,92,170,1);
 $transition-pink: rgba(255,105,180,1);
 $end-green: rgba(0,255,145,1);
 $default-gradient: linear-gradient(to bottom right, $base-pink 0%, $transition-pink 47%, $end-green 100%);
+$default-gradient-radial: linear-gradient(to bottom right, rgba(255,105,180,0.3) 0%, rgba(255,105,180,0.3) 33%, rgba(0,255,145,0.3) 66%);
 
+
+//darker gradient colors
 $darker-transition-pink: rgb(212, 16, 114);
 $darker-gradient: linear-gradient(to bottom right, $base-pink 0%, $darker-transition-pink 40%, $end-green 100%);
 
