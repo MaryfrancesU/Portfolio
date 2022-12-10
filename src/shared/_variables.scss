@@ -1,0 +1,24 @@
+/** COLORS **/
+
+//gradient colors
+$base-pink: rgba(247,92,170,1);
+$transition-pink: rgba(255,105,180,1);
+$end-green: rgba(0,255,145,1);
+$default-gradient: linear-gradient(to bottom right, $base-pink 0%, $transition-pink 47%, $end-green 100%);
+
+$darker-transition-pink: rgb(212, 16, 114);
+$darker-gradient: linear-gradient(to bottom right, $base-pink 0%, $darker-transition-pink 40%, $end-green 100%);
+
+
+//background colors
+$bg-light-mode: white;
+$bg-dark-mode: black;
+$text-color-light-mode: black;
+$text-color-dark-mode: white;
+
+
+//button colors
+$disabled-button-bg-light-mode: lightgray;
+$disabled-button-text-color-light-mode: gray;
+$disabled-button-bg-dark-mode: rgb(37, 35, 35);
+$disabled-button-text-color-dark-mode: gray;

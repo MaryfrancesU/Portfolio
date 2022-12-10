@@ -1,0 +1,56 @@
+@import '../shared/mixins';
+@import '../shared/variables';
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+
+    @include mobile {
+        flex-direction: column;
+    }
+}
+
+.quote {
+    width: 50vw;
+    height: 98vh;
+    border: 1vh solid white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include mobile {
+        width: 96vw;
+        max-height: 80vh;
+        text-align: center;
+    }
+
+    .regtxt {
+        margin: 10px;
+        font-size: 20pt;
+        font-weight: bold;
+
+        @include mobile {
+            margin: 5pt;
+        }
+    }
+
+    #mf {
+        margin: 10px;
+        font-size: 30pt;
+        font-weight: bold;
+        @include gradientText($darker-gradient); 
+    }
+
+    #learning {
+        margin: 10px;
+        font-size: 55pt;
+        font-weight: bold;
+        @include gradientText($default-gradient); 
+    }
+}
