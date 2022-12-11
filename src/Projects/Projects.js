@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
+import NavBar from '../shared/NavBar';
 
 const Projects = () => {
 
   return (
-    <div>This is the projects page. </div>
+    <div>
+       <NavBar currentPage='projects' />
+       This is the projects page. 
+    </div>
   )
 }
 

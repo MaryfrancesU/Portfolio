@@ -1,0 +1,50 @@
+@import './mixins';
+@import './variables';
+
+#line {
+    background-image: $default-gradient;
+    background-clip: border-box;
+    height: 1px;
+    width: 92vw;
+    margin-left: 4vw;
+}
+
+.navbar {
+    margin: 0;
+    padding: 2vw 1vw;
+    width: 98vw;
+    // background-color: #ffdeec;
+
+    .navbar-list {
+        margin:  0;
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        .menu-links {
+            margin:  0;
+            padding: 0;
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+
+            a {
+                padding: 15px;
+                font-weight: bolder;
+                text-decoration: none;
+                color: $text-color-light-mode;
+
+                @include mobile {
+                    padding: 5px;
+                }
+            }
+
+            .selected {
+                a{
+                    @include gradientText($short-text-gradient);
+                }
+            }
+        }
+    }
+}

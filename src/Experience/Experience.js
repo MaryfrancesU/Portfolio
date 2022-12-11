@@ -1,8 +1,12 @@
-import React from 'react'
+import React from 'react';
+import NavBar from '../shared/NavBar';
 
 const Experience = () => {
   return (
-    <div>This is the Experience page </div>
+    <div>
+      <NavBar currentPage='experience' />
+      This is the Experience page 
+    </div>
   )
 }
 
