@@ -8,7 +8,7 @@ const MobileRoad = () => {
             <tr>
                 <td>  </td>
                 <td> 
-                    <a href="#"> <div className='circle'> About Me </div> </a>
+                    <a href="/about"> <div className='circle'> About Me </div> </a>
                 </td>
                 <td> Stick Figure </td>
             </tr>

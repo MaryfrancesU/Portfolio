@@ -44,7 +44,7 @@ html, body {
         margin: 10px;
         font-size: 30pt;
         font-weight: bold;
-        @include gradientText($darker-gradient); 
+        @include gradientText($darker-short-text-gradient); 
     }
 
     #learning {
