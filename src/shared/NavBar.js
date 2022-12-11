@@ -11,19 +11,19 @@ const NavBar = ({currentPage}) => {
                     <li>
                         <ul className='menu-links'>
                         <li> 
-                            <a href="/"> Home </a> 
+                            <a href="/Portfolio"> Home </a> 
                         </li>
 
                         <li className={`${currentPage==='about' ? 'selected' : ''}`}> 
-                            <a href="/about"> About </a> 
+                            <a href="/Portfolio/about"> About </a> 
                         </li>
 
                         <li className={`${currentPage==='projects' ? 'selected' : ''}`}> 
-                            <a href="/projects"> Projects </a> 
+                            <a href="/Portfolio/projects"> Projects </a> 
                         </li>
 
                         <li className={`${currentPage==='experience' ? 'selected' : ''}`}> 
-                            <a href="/experience"> Experience </a> 
+                            <a href="/Portfolio/experience"> Experience </a> 
                         </li>
                         </ul>
                     </li>

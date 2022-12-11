@@ -18,7 +18,7 @@ const DesktopRoad = () => {
             <tr>
                 <td> </td>
                 <td> 
-                    <a href="/experience"> <div className='circle'> Experience </div> </a>
+                    <a href="/Portfolio/experience"> <div className='circle'> Experience </div> </a>
                 </td>
                 <td> </td>
             </tr>
@@ -27,14 +27,14 @@ const DesktopRoad = () => {
                 <td> </td>
                 <td> </td>
                 <td> 
-                    <a href="/projects"> <div className='circle'> Projects </div> </a>
+                    <a href="/Portfolio/projects"> <div className='circle'> Projects </div> </a>
                 </td>
             </tr>
 
             <tr>
                 <td> Stick Figure  </td>
                 <td> 
-                    <a href="/about"> <div className='circle'> About Me </div> </a>
+                    <a href="/Portfolio/about"> <div className='circle'> About Me </div> </a>
                 </td>
                 <td> </td>
             </tr>
