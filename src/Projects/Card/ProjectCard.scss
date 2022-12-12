@@ -1,0 +1,106 @@
+@import '../../shared/mixins';
+@import '../../shared/variables';
+
+.project-card {
+
+    width: 32%;
+    height: 60vh;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+    display: flex;
+    flex-direction: column;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @include mobile {
+        height: 50vh;
+        width: 100%; //of its parent
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    &>*{
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+
+    img {
+        height: 40%;
+        margin-top: 2%;
+        border-radius: 15px;
+        object-fit: cover;
+    }
+
+    h4 {
+        margin-top: 2%;
+        margin-bottom: 0;
+    }
+
+    p {
+        margin-top: 5%;
+        margin-bottom: 0;
+    }
+
+    .tech-stack {
+        margin-top: 5%;
+    }
+
+    .button-outline {
+        margin-top: auto;
+        margin-bottom: 2%;
+
+        width: 50%;
+        height: 10%;
+        padding: 2%;
+        border-radius: 30px;
+        position: relative;
+        background: $default-gradient;
+
+        //to center a relatively-positioned div
+        left: 50%;
+        transform: translateX(-50%);
+
+        .button {
+            position: absolute;
+            width: 96%; left: 2%; 
+            height: 93%;    top: 4%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            border-radius: 30px;
+
+            &:hover {
+                font-weight: bold;
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+
+        .disabled {
+            background-color: $disabled-button-bg-light-mode;
+
+            &:hover {
+                font-weight: normal;
+            }
+
+            a {
+                color: $disabled-button-text-color-light-mode;
+                cursor: default;
+            }
+        }
+    }
+}
