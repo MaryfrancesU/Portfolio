@@ -1,6 +1,11 @@
 @import '../shared/mixins';
 @import '../shared/variables';
 
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 .projects-container {
     width: 90vw;
     margin-top: 20px;

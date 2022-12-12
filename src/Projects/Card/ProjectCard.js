@@ -2,7 +2,7 @@ import React from 'react';
 import './ProjectCard.scss';
 import PropTypes from 'prop-types';
 
-const ProjectCard = ({src, title, description, techstack, available}) => {
+const ProjectCard = ({src, title, description, techstack, available, link}) => {
   return (
     <div className='project-card'>
         <img src={src}/>
@@ -16,7 +16,7 @@ const ProjectCard = ({src, title, description, techstack, available}) => {
         <div className='button-outline'>
             <div className={`button ${available ? '' : 'disabled'}`}>
                 {available
-                    ? <a href="#"> CHECK IT OUT! </a>
+                    ? <a href={link}> CHECK IT OUT! </a>
                     : <a href="#"> COMING SOON... </a>
                 }
             </div>
@@ -31,7 +31,8 @@ ProjectCard.propTypes = {
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     techstack: PropTypes.string.isRequired,
-    available: PropTypes.bool.isRequired
+    available: PropTypes.bool.isRequired,
+    link: PropTypes.string
 };
 
 export default ProjectCard

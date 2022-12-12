@@ -4,6 +4,9 @@ import NavBar from '../shared/NavBar';
 import ProjectCard from './Card/ProjectCard';
 
 import retain from './images/retain.png';
+import ravendesk from './images/ravendesk.png';
+import studyspot from './images/studyspot.png';
+import gotem from './images/gotem.png';
 
 const Projects = () => {
 
@@ -11,7 +14,8 @@ const Projects = () => {
     <div>
        <NavBar currentPage='projects' />
         <div className='projects-container'>
-            --Description of this page coming soon--
+            My grades and experience are one way to showcase my skills as a developer, and the projects
+            I&apos;ve built outside of work are another!
 
             <div className='project-section' id="learning-section">
                 <h2> Having Fun Studying </h2>
@@ -29,7 +33,7 @@ const Projects = () => {
                             available={true}
                         />
                         <ProjectCard 
-                            src="#"
+                            //src={}
                             title='WriteIt'
                             description='Quizlet decided to hide this feature behind a paywall... so I decided to make it myself!'
                             techstack='React, Firebase'
@@ -48,9 +52,27 @@ const Projects = () => {
 
                 <div className='section-cards'> 
                     <div className='section-cards--row'>
-                        <ProjectCard />
-                        <ProjectCard />
-                        <ProjectCard />
+                        <ProjectCard 
+                            src={ravendesk}
+                            title='RavenDesk'
+                            description='The brain is a fickle mistress, so rather than trying to memorize all your characters and plot lines, use the RavenDesk! -Edgar Allen Poe (probably)'
+                            techstack='PHP, SQL, HTML/CSS/JS'
+                            available={false}
+                        />
+                        <ProjectCard 
+                            //src={}
+                            title='Mini Games'
+                            description='Featuring classic games like Hangman, Tic Tac Toe, and Unscramble!'
+                            techstack='React'
+                            available={false}
+                        />
+                        <ProjectCard 
+                            //src={}
+                            title='Shopaholic'
+                            description='I decided to try my hand at building a shopping app. I mean Jeff Bezos did it, so how hard can it be!'
+                            techstack='React, Firebase'
+                            available={false}
+                        />
                     </div>
                     
                     {/* <div className='section-cards--row'>
@@ -68,9 +90,20 @@ const Projects = () => {
 
                 <div className='section-cards'> 
                     <div className='section-cards--row'>
-                        <ProjectCard />
-                        <ProjectCard />
-                        <ProjectCard />
+                        <ProjectCard 
+                            //src={}
+                            title='Randomizer'
+                            description='For those days you find yourself indecisive, roll a die... or open this app!'
+                            techstack='Android Studio, Java'
+                            available={false}
+                        />
+                        <ProjectCard 
+                            //src={}
+                            title='Simple Calculator'
+                            description='I made this project years ago to help me learn how to use Android Studio.'
+                            techstack='Android Studio, Java'
+                            available={false}
+                        />
                     </div>
                 </div>
             </div>
@@ -84,8 +117,22 @@ const Projects = () => {
 
                 <div className='section-cards'> 
                     <div className='section-cards--row'>
-                        <ProjectCard />
-                        <ProjectCard />
+                        <ProjectCard 
+                            src={studyspot}
+                            title='StudySpot'
+                            description='Ugh, the library&apos;s packed! Good thing you reserved a spot ahead of time!'
+                            techstack='Flask Python, Jinja Templates, HTML/CSS/JS'
+                            available={true}
+                            link="https://github.com/MaryfrancesU/StudySpot"
+                        />
+                        <ProjectCard 
+                            src={gotem}
+                            title='Gotem'
+                            description='Gotem allows users to quickly and efficiently schedule and obtain transportation for hospital and clinical visits.'
+                            techstack='React, Firebase'
+                            available={true}
+                            link="https://github.com/soumildatta/gotem"
+                        />
                     </div>
                 </div>
             </div>
