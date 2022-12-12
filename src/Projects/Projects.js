@@ -31,6 +31,7 @@ const Projects = () => {
                             description='Flashcards are boring... what if we played a matching game instead?'
                             techstack='Ionic'
                             available={true}
+                            link="https://github.com/MaryfrancesU/Retain"
                         />
                         <ProjectCard 
                             //src={}
@@ -57,7 +58,8 @@ const Projects = () => {
                             title='RavenDesk'
                             description='The brain is a fickle mistress, so rather than trying to memorize all your characters and plot lines, use the RavenDesk! -Edgar Allen Poe (probably)'
                             techstack='PHP, SQL, HTML/CSS/JS'
-                            available={false}
+                            available={true}
+                            link="https://github.com/MaryfrancesU/RavenDesk"
                         />
                         <ProjectCard 
                             //src={}
@@ -95,14 +97,16 @@ const Projects = () => {
                             title='Randomizer'
                             description='For those days you find yourself indecisive, roll a die... or open this app!'
                             techstack='Android Studio, Java'
-                            available={false}
+                            available={true}
+                            link="https://github.com/MaryfrancesU/Mini-Mobile-Apps/tree/Randomizer"
                         />
                         <ProjectCard 
                             //src={}
                             title='Simple Calculator'
                             description='I made this project years ago to help me learn how to use Android Studio.'
                             techstack='Android Studio, Java'
-                            available={false}
+                            available={true}
+                            link="https://github.com/MaryfrancesU/Mini-Mobile-Apps/tree/SimpleCalculator"
                         />
                     </div>
                 </div>
