@@ -8,7 +8,7 @@ const AboutMe = () => {
         <NavBar currentPage='about' />
         <div className='about-container'>
             <div id="profile-pic"> 
-                Giant Picture
+                I&apos;m a little camera shy.
             </div>
             <div id="about-content"> 
                 <h1> About Maryfrances </h1>
