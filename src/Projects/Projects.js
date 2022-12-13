@@ -5,6 +5,8 @@ import ProjectCard from './Card/ProjectCard';
 
 import retain from './images/retain.png';
 import ravendesk from './images/ravendesk.png';
+import randomizer from './images/randomizer.png';
+import calculator from './images/calculator.png';
 import studyspot from './images/studyspot.png';
 import gotem from './images/gotem.png';
 
@@ -56,8 +58,8 @@ const Projects = () => {
                         <ProjectCard 
                             src={ravendesk}
                             title='RavenDesk'
-                            description='The brain is a fickle mistress, so rather than trying to memorize all your characters and plot lines, use the RavenDesk! -Edgar Allen Poe (probably)'
-                            techstack='PHP, SQL, HTML/CSS/JS'
+                            description='The brain is a fickle mistress, so use the RavenDesk instead! -Edgar Allen Poe (probably)'
+                            techstack='PHP'
                             available={true}
                             link="https://github.com/MaryfrancesU/RavenDesk"
                         />
@@ -93,7 +95,7 @@ const Projects = () => {
                 <div className='section-cards'> 
                     <div className='section-cards--row'>
                         <ProjectCard 
-                            //src={}
+                            src={randomizer}
                             title='Randomizer'
                             description='For those days you find yourself indecisive, roll a die... or open this app!'
                             techstack='Android Studio, Java'
@@ -101,7 +103,7 @@ const Projects = () => {
                             link="https://github.com/MaryfrancesU/Mini-Mobile-Apps/tree/Randomizer"
                         />
                         <ProjectCard 
-                            //src={}
+                            src={calculator}
                             title='Simple Calculator'
                             description='I made this project years ago to help me learn how to use Android Studio.'
                             techstack='Android Studio, Java'
