@@ -8,7 +8,7 @@ import useWindowDimensions from '../../hooks/useWindowDimensions';
 const Journey = () => {
 
     const { width } = useWindowDimensions();
-    const [ isMobile ] = useState((width <= 820) ?  true : false);
+    const [ isMobile ] = useState((width < 820) ?  true : false);
 
     useEffect(() => {
       console.log("isMobile " + isMobile);

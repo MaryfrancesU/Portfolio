@@ -18,7 +18,8 @@ html, body {
 .quote {
     width: 50vw;
     height: 98vh;
-    border: 1vh solid transparent;
+    border-top: 1vh solid transparent;
+    border-bottom: 1vh solid transparent;
 
     display: flex;
     flex-direction: column;
@@ -28,6 +29,10 @@ html, body {
         width: 96vw;
         max-height: 80vh;
         text-align: center;
+    }
+
+    @include tablet-in-portrait-mode {
+        width: 45vw;
     }
 
     .regtxt {
