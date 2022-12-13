@@ -127,7 +127,7 @@ const Projects = () => {
                             src={studyspot}
                             title='StudySpot'
                             description='Ugh, the library&apos;s packed! Good thing you reserved a spot ahead of time!'
-                            techstack='Flask Python, Jinja Templates, HTML/CSS/JS'
+                            techstack='Flask Python, Jinja Templates'
                             available={true}
                             link="https://github.com/MaryfrancesU/StudySpot"
                         />
