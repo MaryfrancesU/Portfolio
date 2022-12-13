@@ -32,6 +32,12 @@ body, html {
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @include mobile-and-tablet {
+            //change this later when image is actually added
+            width: 60%;
+            padding: 20%;
+        }
     }
 
     #about-content{
