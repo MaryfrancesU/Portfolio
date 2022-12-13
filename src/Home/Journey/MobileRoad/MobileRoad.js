@@ -1,12 +1,13 @@
 import React from 'react';
 import './MobileRoad.scss';
+import traveller from '../assets/traveller.png';
 
 const MobileRoad = () => {
   return (
         <table id="mobileTable">
 
             <tr>
-                <td> Stick Figure </td>
+                <td> <img id="stick-figure" src={traveller} /> </td>
                 <td> 
                     <a href="/Portfolio/about"> <div className='circle'> About Me </div> </a>
                 </td>

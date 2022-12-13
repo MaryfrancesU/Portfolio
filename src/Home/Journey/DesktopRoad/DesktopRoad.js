@@ -1,5 +1,6 @@
 import React from 'react';
 import './DesktopRoad.scss';
+import traveller from '../assets/traveller.png';
 
 const DesktopRoad = () => {
   return (
@@ -32,7 +33,7 @@ const DesktopRoad = () => {
             </tr>
 
             <tr>
-                <td> Stick Figure  </td>
+                <td> <img id="stick-figure" src={traveller} />  </td>
                 <td> 
                     <a href="/Portfolio/about"> <div className='circle'> About Me </div> </a>
                 </td>
