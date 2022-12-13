@@ -10,6 +10,12 @@
     }
 }
 
+@mixin tablet-in-portrait-mode {
+   @media only screen and (min-device-width : 700px) and (max-device-width : 1500px) and (orientation : portrait) {
+        @content;
+    }
+}
+
  
 @mixin gradientText($gradient) {
     background-image: $gradient;

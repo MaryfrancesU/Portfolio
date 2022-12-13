@@ -26,6 +26,10 @@
         margin-bottom: 10px;
     }
 
+    @include tablet-in-portrait-mode {
+        height: 32vh;
+    }
+
     &>*{
         width: 96%;
         margin-left: 2%;
