@@ -1,0 +1,27 @@
+@import "./mixins";
+@import "./variables";
+
+:root[data-theme="dark"] {
+    --dark: initial;
+    --light: ;
+}
+:root[data-theme="light"] {
+    --dark: ;
+    --light: initial;
+}
+
+:root {
+    --fontColor: var(--light, #{$text-color-light-mode}) var(--dark, #{$text-color-dark-mode});
+    --backgroundColor: var(--light, #{$bg-light-mode}) var(--dark, #{$bg-dark-mode});
+
+    --toggleBackground: var(--light, #FFBF71) var(--dark, #423966);
+
+    --cardBorderColor: var(--light, transparent) var(--dark, white);
+
+    --disabledButtonBackground: var(--light, #{$disabled-button-bg-light-mode})
+                                var(--dark, #{$disabled-button-bg-dark-mode});
+
+    --disabledButtonText: var(--light, #{$disabled-button-text-color-light-mode})
+                            var(--dark, #{$disabled-button-text-color-dark-mode});
+
+}

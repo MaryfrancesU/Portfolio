@@ -1,5 +1,4 @@
-@import '../../shared/mixins';
-@import '../../shared/variables';
+@import '../../shared/styles';
 
 .project-card {
 
@@ -8,7 +7,8 @@
     margin-top: 10px;
     margin-right: 10px;
     border-radius: 15px;
-    background-color: white;
+    border: solid 1px var(--cardBorderColor);
+    background-color: var(--backgroundColor);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 
@@ -78,6 +78,7 @@
         transform: translateX(-50%);
 
         .button {
+            cursor: pointer;
             position: absolute;
             width: 96%; left: 2%; 
             height: 93%;    top: 4%;
@@ -85,7 +86,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: white;
+            background-color: var(--backgroundColor);
             border-radius: 30px;
 
             &:hover {
@@ -94,19 +95,20 @@
 
             a {
                 text-decoration: none;
-                color: black;
+                color: var(--fontColor);
             }
         }
 
         .disabled {
-            background-color: $disabled-button-bg-light-mode;
+            cursor: default;
+            background-color: var(--disabledButtonBackground);
 
             &:hover {
                 font-weight: normal;
             }
 
             a {
-                color: $disabled-button-text-color-light-mode;
+                color: var(--disabledButtonText);
                 cursor: default;
             }
         }

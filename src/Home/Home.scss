@@ -1,14 +1,24 @@
-@import '../shared/mixins';
-@import '../shared/variables';
+@import '../shared/styles';
 
 html, body {
     margin: 0;
     padding: 0;
 }
 
+.notice {
+    text-align: center;
+    margin-top:15px;
+    span {
+        color: red;
+        font-weight: bold;
+    }
+}
+
 .container {
     display: flex;
     flex-direction: row;
+    // background-color: white;
+    // color: black;
 
     @include mobile {
         flex-direction: column;

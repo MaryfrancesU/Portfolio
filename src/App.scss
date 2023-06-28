@@ -1,2 +1,6 @@
-@import './shared/mixins';
-@import './shared/variables';
+@import "./shared/styles";
+
+html {
+    color: var(--fontColor);
+    background-color: var(--backgroundColor);
+}

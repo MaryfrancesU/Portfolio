@@ -1,5 +1,4 @@
-@import '../shared/mixins';
-@import '../shared/variables';
+@import '../shared/styles';
 
 body, html {
     margin-left: 0;
@@ -54,6 +53,15 @@ body, html {
         p {
             font-size: 18px;
             text-align:justify;
+        }  
+    }
+}
+
+:root[data-theme="dark"] {
+    .ghsvg {
+        svg {
+            -webkit-filter: invert(100%);
+            filter: invert(100%);
         }
     }
 }
