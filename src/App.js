@@ -10,13 +10,14 @@ function App() {
     
     useEffect(() => {
         const html = document.documentElement;
-        const currentTheme = window.sessionStorage.getItem("mu-portfolio--theme");
+        const sessionTheme = window.sessionStorage.getItem("mu-portfolio--theme");
 
-        if (currentTheme != null)
-            html.dataset.theme = currentTheme;
+        if (sessionTheme == null){ 
+            html.dataset.theme = "light";
+            window.sessionStorage.setItem("mu-portfolio--theme", html.dataset.theme);
+        }
         else {
-            html.dataset.theme = currentTheme;
-            window.sessionStorage.setItem("mu-portfolio--theme", "light");
+            html.dataset.theme = sessionTheme;
         }
     },[])
 
