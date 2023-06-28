@@ -1,5 +1,13 @@
 @import './styles.scss';
 
+@media screen {
+    body{
+      -webkit-text-size-adjust: 100%;
+      -moz-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+    }
+}
+
 #line {
     background-image: $default-gradient;
     background-clip: border-box;
