@@ -7,17 +7,18 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect } from 'react';
 
 function App() {
-    const html = document.documentElement;
-    const currentTheme = window.sessionStorage.getItem("mu-portfolio--theme");
-
+    
     useEffect(() => {
+        const html = document.documentElement;
+        const currentTheme = window.sessionStorage.getItem("mu-portfolio--theme");
+
         if (currentTheme != null)
             html.dataset.theme = currentTheme;
         else {
             html.dataset.theme = currentTheme;
-            window.sessionStorage.setItem("mu-portfolio--theme", "dark");
+            window.sessionStorage.setItem("mu-portfolio--theme", "light");
         }
-    },[currentTheme, html])
+    },[])
 
     return (
         <BrowserRouter basename="/Portfolio">

@@ -3,15 +3,15 @@ import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types';
 
 const NavBar = ({currentPage}) => {
-    const html = document.documentElement;
     const [heavenlyBody, setHeavenlyBody] = useState("");
-    const currentTheme = window.sessionStorage.getItem("mu-portfolio--theme");
 
     useEffect(() => {
+        const currentTheme = window.sessionStorage.getItem("mu-portfolio--theme");
         setHeavenlyBody(currentTheme === "dark" ? "moon" : "sun");
-    }, [html, currentTheme])
+    }, [])
 
     const toggleTheme = () =>{
+        const html = document.documentElement;
         if (html.dataset.theme == "light") {
             window.sessionStorage.setItem("mu-portfolio--theme", "dark");
             html.dataset.theme = "dark";
