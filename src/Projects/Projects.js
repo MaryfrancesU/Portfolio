@@ -22,7 +22,7 @@ const Projects = () => {
             <div className='project-section' id="learning-section">
                 <h2> Having Fun Studying </h2>
                 <p className='section-description'> 
-                    I love to learning... and creating apps to help make the process just a little more efficient! 
+                    I love learning... and creating apps to help make the process just a little more efficient! 
                 </p>
 
                 <div className='section-cards'> 
