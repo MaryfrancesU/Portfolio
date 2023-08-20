@@ -1,4 +1,5 @@
 @import '../shared/styles';
+@import '../shared/variables';
 
 html, body {
     margin: 0;
@@ -17,8 +18,6 @@ html, body {
 .container {
     display: flex;
     flex-direction: row;
-    // background-color: white;
-    // color: black;
 
     @include mobile {
         flex-direction: column;
@@ -27,7 +26,7 @@ html, body {
 
 .quote {
     width: 50vw;
-    height: 98vh;
+    height: 85vh;
     border-top: 1vh solid transparent;
     border-bottom: 1vh solid transparent;
 
@@ -67,5 +66,68 @@ html, body {
         font-size: 55pt;
         font-weight: bold;
         @include gradientText($default-gradient); 
+    }
+}
+
+.links {
+    width: 50vw;
+    height: 85vh;
+    border-top: 1vh solid transparent;
+    border-bottom: 1vh solid transparent;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    @include mobile {
+        display: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: unset;
+    }
+
+    .link-outline {
+        width: 40vw;
+        height: 15vh;
+        padding: 0 0.5vw;
+        border-radius: 25px;
+        box-sizing: border-box;
+        background: $default-gradient;
+
+        text-align: right;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .link-cover {
+        width: 39vw;
+        height: 13.5vh;
+        padding: 20px;
+        border-radius: 20px;
+        box-sizing: border-box;
+
+        position: absolute;
+        text-align: left;
+        font-size: larger;
+        background-color: var(--backgroundColor);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .link-outline:hover .link-cover {
+        width: 200px;
+    }
+
+    .link-desc {
+        font-size: large;
+        font-weight: bold;
     }
 }
