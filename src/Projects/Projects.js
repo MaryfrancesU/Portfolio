@@ -67,8 +67,9 @@ const Projects = () => {
                             //src={}
                             title='Mini Games'
                             description='Featuring classic games like Hangman, Tic Tac Toe, and Unscramble!'
-                            techstack='React'
-                            available={false}
+                            techstack='Next JS'
+                            available={true}
+                            link="https://github.com/MaryfrancesU/Classic-Mini-Games"
                         />
                         <ProjectCard 
                             //src={}
