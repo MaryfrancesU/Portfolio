@@ -9,6 +9,7 @@ import randomizer from './images/randomizer.png';
 import calculator from './images/calculator.png';
 import studyspot from './images/studyspot.png';
 import gotem from './images/gotem.png';
+import jlptKanjiTester from './images/jlpt-kanji-tester.png';
 
 const Projects = () => {
 
@@ -36,9 +37,17 @@ const Projects = () => {
                             link="https://github.com/MaryfrancesU/Retain"
                         />
                         <ProjectCard 
+                            src={jlptKanjiTester}
+                            title='JLPT Kanji Tester'
+                            description='I got tired of having to make and grade my own quizzes, so I made an app to do it for me!'
+                            techstack='Next JS'
+                            available={true}
+                            link="https://jlpt-kanji-tester.vercel.app/"
+                        />
+                        <ProjectCard 
                             //src={}
-                            title='WriteIt'
-                            description='Quizlet decided to hide this feature behind a paywall... so I decided to make it myself!'
+                            title='Testlet'
+                            description='My Quizlet dupe with a few more bells and whistles.'
                             techstack='React, Firebase'
                             available={false}
                         />
