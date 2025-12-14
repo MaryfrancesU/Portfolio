@@ -1,0 +1,24 @@
+@import "../shared/styles/rootStyles";
+@import "../shared/styles/variables";
+
+.typing-container {
+  font-size: 2rem;
+  white-space: nowrap;
+  color: $dracula-purple;
+  text-transform: uppercase;
+}
+
+.cursor {
+  width: 2px;
+  height: 1.5rem;
+  margin-left: 4px;
+  display: inline-block;
+  background-color: currentColor;
+  animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}

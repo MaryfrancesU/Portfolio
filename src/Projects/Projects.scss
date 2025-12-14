@@ -1,44 +1,41 @@
-@import '../shared/styles';
+@import "../shared/styles/rootStyles";
 
-html, body {
-    margin: 0;
-    padding: 0;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
 .projects-container {
-    width: 90vw;
-    margin-top: 20px;
-    margin-left: 5vw;
-    text-align: center;
-    // background-color: oldlace;
+  width: 90vw;
+  margin-top: 20px;
+  margin-left: 5vw;
+  text-align: center;
+  // background-color: oldlace;
 
+  .project-section {
+    margin: 20px;
+    padding: 10px;
+    // background-color: antiquewhite;
 
-    .project-section {
-        margin: 20px;
-        padding: 10px;
-        // background-color: antiquewhite;
-        
-        h2 {
-            @include gradientText($default-gradient);
-        }
-
-        // .section-description {
-
-        // }
-
-
-        .section-cards {
-            
-            &--row {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-
-                @include mobile {
-                    flex-direction: column;
-                }
-            }
-        }
-
+    h2 {
+      @include gradientText($default-gradient);
     }
+
+    // .section-description {
+
+    // }
+
+    .section-cards {
+      &--row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        @include mobile {
+          flex-direction: column;
+        }
+      }
+    }
+  }
 }

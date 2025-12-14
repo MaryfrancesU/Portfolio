@@ -1,134 +1,197 @@
-@import '../shared/styles';
-@import '../shared/variables';
+@import "../shared/styles/rootStyles";
+@import "../shared/styles/variables";
 
-html, body {
-    margin: 0;
-    padding: 0;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.notice {
-    text-align: center;
-    margin-top:15px;
-    span {
-        color: red;
-        font-weight: bold;
-    }
+:root[data-theme="dark"] {
+  .iconToInvert {
+      -webkit-filter: invert(100%);
+      filter: invert(100%);
+  }
 }
 
 .container {
-    display: flex;
-    flex-direction: row;
+  padding: 10px;
 
-    @include mobile {
-        flex-direction: column;
+  .section {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+
+    & > * {
+      width: 100%;
     }
-}
+  }
 
-.quote {
-    width: 50vw;
-    height: 85vh;
-    border-top: 1vh solid transparent;
-    border-bottom: 1vh solid transparent;
-
-    display: flex;
-    flex-direction: column;
+  .hero-section {
+    align-items: center;
     justify-content: center;
-
     @include mobile {
-        width: 96vw;
-        max-height: 80vh;
-        text-align: center;
+      text-align: center;
+      flex-direction: column-reverse;
     }
 
-    @include tablet-in-portrait-mode {
-        width: 45vw;
-    }
-
-    .regtxt {
-        margin: 10px;
-        font-size: 20pt;
-        font-weight: bold;
+    .description {
+      h1 {
+        font-size: 5vw;
+        margin: 15px 0px;
+        color: $dracula-pink;
+        font-family: "Audiowide-Header";
 
         @include mobile {
-            margin: 5pt;
+          font-size: 10vw;
         }
+      }
+
+      .buttons {
+        gap: 20px;
+        display: flex;
+        padding-top: 25px;
+
+        @include mobile {
+          justify-content: space-between;
+        }
+
+        a {
+          padding: 15px;
+          border-radius: 10px;
+          color: var(--variableCyan);
+          text-decoration: none;
+          border: 4px solid var(--variableCyan);
+          background-color: var(--backgroundColor);
+          transition: all 0.3s ease;
+
+          &:hover {
+            transform: translateY(-5px);
+            filter: brightness(85%);
+          }
+        }
+      }
     }
 
-    #mf {
-        margin: 10px;
-        font-size: 30pt;
-        font-weight: bold;
-        @include gradientText($darker-short-text-gradient); 
+    .image {
+      img {
+        width: 50vw;
+        max-height: 55vh;
+      }
     }
+  }
 
-    #learning {
-        margin: 10px;
-        font-size: 55pt;
-        font-weight: bold;
-        @include gradientText($default-gradient); 
-    }
-}
-
-.links {
-    width: 50vw;
-    height: 85vh;
-    border-top: 1vh solid transparent;
-    border-bottom: 1vh solid transparent;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-
+  .skills-section {
     @include mobile {
-        display: none;
+      flex-direction: column;
     }
 
-    a {
-        text-decoration: none;
-        color: unset;
-    }
-
-    .link-outline {
-        width: 40vw;
-        height: 15vh;
-        padding: 0 0.5vw;
-        border-radius: 25px;
-        box-sizing: border-box;
-        background: $default-gradient;
-
-        text-align: right;
-        position: relative;
+    .what-i-build {
+      .tiles {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+
+        .tile {
+          width: 100%;
+          margin: 5px;
+          padding: 5px;
+          cursor: pointer;
+          max-width: 150px;
+          text-align: center;
+          border-radius: 20px;
+          box-sizing: border-box;
+          color: var(--fontColor);
+          border: 4px solid $dracula-purple;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+          // &:hover {
+          //   transform: translateY(-6px);
+          // }
+
+          .icon {
+            width: 64px;
+            height: 64px;
+            fill: none;
+            stroke-width: 2;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            stroke: $dracula-pink;
+            transition: transform 0.6s ease;
+          }
+
+          &.web:hover .icon {
+            animation: bounce 0.9s ease-out forwards;
+          }
+
+          @keyframes bounce {
+            0% {
+              transform: translateY(0);
+            }
+            20% {
+              transform: translateY(-20px);
+            }
+            40% {
+              transform: translateY(0);
+            }
+            55% {
+              transform: translateY(-10px);
+            }
+            70% {
+              transform: translateY(0);
+            }
+            82% {
+              transform: translateY(-4px);
+            }
+            100% {
+              transform: translateY(0);
+            }
+          }
+
+          &.mobile {
+            perspective: 600px;
+          }
+
+          &.mobile:hover .icon {
+            animation: phoneSpin 0.9s ease-in-out forwards;
+            transform-style: preserve-3d;
+          }
+
+          @keyframes phoneSpin {
+            0% {
+              transform: rotateY(0deg);
+            }
+            40% {
+              transform: rotateY(90deg);
+            }
+            60% {
+              transform: rotateY(180deg);
+            }
+            80% {
+              transform: rotateY(270deg);
+            }
+            100% {
+              transform: rotateY(360deg);
+            }
+          }
+
+          .tile.mobile:hover .icon {
+            transform: rotateY(90deg);
+          }
+
+          &.cloud:hover .icon {
+            transform: translateY(-8px) scale(1.05);
+          }
+
+          p {
+            margin: 0;
+            font-size: 14px;
+            letter-spacing: 1px;
+          }
+        }
+      }
     }
 
-    .link-cover {
-        width: 39vw;
-        height: 13.5vh;
-        padding: 20px;
-        border-radius: 20px;
-        box-sizing: border-box;
-
-        position: absolute;
-        text-align: left;
-        font-size: larger;
-        background-color: var(--backgroundColor);
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        transition: all 0.5s ease-in-out;
+    .technologies {
+      svg {padding-right: 5px; }
     }
-
-    .link-outline:hover .link-cover {
-        width: 200px;
-    }
-
-    .link-desc {
-        color: black;
-        font-size: large;
-        font-weight: bold;
-    }
+  }
 }

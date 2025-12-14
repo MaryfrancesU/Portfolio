@@ -1,67 +1,68 @@
-@import '../shared/styles';
+@import "../shared/styles/rootStyles";
 
-body, html {
-    margin-left: 0;
-    margin-right: 0;
+body,
+html {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .about-container {
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    width: 90vw;
-    margin-top: 5vw;
-    margin-left: 5vw;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  width: 90vw;
+  margin-top: 5vw;
+  margin-left: 5vw;
+
+  @include mobile-and-tablet {
+    flex-direction: column;
+  }
+
+  & > div {
+    padding: 10px;
 
     @include mobile-and-tablet {
-        flex-direction: column;
+      padding: 0;
+    }
+  }
+
+  #profile-pic {
+    background-color: lightcoral;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include mobile-and-tablet {
+      //change this later when image is actually added
+      width: 60%;
+      padding: 20%;
+    }
+  }
+
+  #about-content {
+    width: 100%;
+
+    h1 {
+      margin: 0;
+      @include gradientText($short-text-gradient);
+      @include mobile-and-tablet {
+        margin-top: 15px;
+      }
     }
 
-    &> div {
-        padding: 10px;
-
-        @include mobile-and-tablet {
-            padding: 0;
-        }
+    p {
+      font-size: 18px;
+      text-align: justify;
     }
-
-    #profile-pic {
-        background-color: lightcoral;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        @include mobile-and-tablet {
-            //change this later when image is actually added
-            width: 60%;
-            padding: 20%;
-        }
-    }
-
-    #about-content{
-        width: 100%;
-
-        h1 {
-            margin: 0;
-            @include gradientText($short-text-gradient); 
-            @include mobile-and-tablet {
-                margin-top: 15px;
-            }
-        }
-
-        p {
-            font-size: 18px;
-            text-align:justify;
-        }  
-    }
+  }
 }
 
 :root[data-theme="dark"] {
-    .ghsvg {
-        svg {
-            -webkit-filter: invert(100%);
-            filter: invert(100%);
-        }
+  .ghsvg {
+    svg {
+      -webkit-filter: invert(100%);
+      filter: invert(100%);
     }
+  }
 }

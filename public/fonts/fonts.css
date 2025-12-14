@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Audiowide-Header';
+  src: url('Audiowide-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Iceland-Regular';
+  src: url('Iceland-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

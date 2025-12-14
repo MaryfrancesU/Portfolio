@@ -1,13 +1,13 @@
-@import '../shared/styles';
+@import "../shared/styles/rootStyles";
 
 .experience-container {
-    width: 90vw;
-    margin-top: 5vw;
-    margin-left: 5vw;
+  width: 90vw;
+  margin-top: 5vw;
+  margin-left: 5vw;
 
-    text-align: center; //change later
+  text-align: center; //change later
 
-    a {
-        color: $transition-pink;
-    }
+  a {
+    color: $transition-pink;
+  }
 }
