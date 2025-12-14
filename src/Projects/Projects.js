@@ -1,5 +1,4 @@
 import "./Projects.scss";
-import React from "react";
 import NavBar from "../shared/NavBar/NavBar";
 import ProjectCard from "./Card/ProjectCard";
 

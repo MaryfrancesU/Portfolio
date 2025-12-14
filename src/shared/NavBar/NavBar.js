@@ -1,12 +1,17 @@
 import "./NavBar.scss";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
 const NavBar = ({ currentPage }) => {
   const [heavenlyBody, setHeavenlyBody] = useState("");
 
   useEffect(() => {
-    const currentTheme = window.localStorage.getItem("mu-portfolio--theme");
+    let currentTheme = window.localStorage.getItem("mu-portfolio--theme");
+    if (!currentTheme) {
+      currentTheme = "dark";
+      window.localStorage.setItem("mu-portfolio--theme", currentTheme);
+      document.documentElement.dataset.theme = currentTheme;
+    }
     setHeavenlyBody(currentTheme === "dark" ? "moon" : "sun");
   }, []);
 

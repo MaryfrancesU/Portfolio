@@ -1,4 +1,3 @@
-import React from "react";
 import "./Experience.scss";
 import NavBar from "../shared/NavBar/NavBar";
 

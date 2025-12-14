@@ -1,4 +1,3 @@
-import React from 'react';
 import './ProjectCard.scss';
 import PropTypes from 'prop-types';
 
