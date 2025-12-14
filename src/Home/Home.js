@@ -13,7 +13,7 @@ const Home = () => {
       <NavBar currentPage="home" />
 
       <div className="container">
-        <div className="section hero-section">
+        <div className="hero-section">
           <div className="description">
             <h1> MARYFRANCES UMEORA </h1>
             <TypingEffect />
@@ -29,29 +29,22 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="section skills-section">
-          <div className="what-i-build">
-            <h1> WHAT I BUILD </h1>
+        <div className="what-i-build">
+          <h1> WHAT I BUILD </h1>
 
-            <div className="tiles">
-              <div className="tile web">
-                <ComputerIcon className="icon"/>
-                <p>WEB APPS</p>
-              </div>
-              <div className="tile mobile">
-                <PhoneIcon className="icon"/>
-                <p>MOBILE APPS</p>
-              </div>
-              <div className="tile cloud">
-                <CloudIcon className="icon"/>
-                <p>CLOUD SOLUTIONS</p>
-              </div>
+          <div className="tiles">
+            <div className="tile web">
+              <ComputerIcon className="icon" />
+              <p>WEB APPS</p>
             </div>
-          </div>
-
-          <div className="technologies">
-            <h1> RELEVANT SKILLS </h1>
-            {/* <AllSkillsIcons /> */}
+            <div className="tile mobile">
+              <PhoneIcon className="icon" />
+              <p>MOBILE APPS</p>
+            </div>
+            <div className="tile cloud">
+              <CloudIcon className="icon" />
+              <p>CLOUD SOLUTIONS</p>
+            </div>
           </div>
         </div>
       </div>

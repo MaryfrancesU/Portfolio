@@ -1,6 +1,13 @@
 @import "./shared/styles/rootStyles";
 
 html {
-    color: var(--fontColor);
-    background-color: var(--backgroundColor);
+  color: var(--fontColor);
+  background-color: var(--backgroundColor);
+}
+
+:root[data-theme="dark"] {
+  .iconToInvert {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+  }
 }

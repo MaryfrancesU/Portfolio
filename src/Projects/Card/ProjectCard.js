@@ -1,37 +1,44 @@
-import './ProjectCard.scss';
-import PropTypes from 'prop-types';
+import "./ProjectCard.scss";
+import PropTypes from "prop-types";
 
-const ProjectCard = ({src, title, description, techstack, available, link}) => {
+const ProjectCard = ({
+  src,
+  title,
+  description,
+  techstack,
+  available,
+  link,
+}) => {
   return (
-    <div className='project-card'>
-        <img src={src}/>
-        
-        <h4> {title} </h4>
+    <div className="project-card">
+      <img src={src} />
 
-        <p> {description} </p>
+      <h4> {title} </h4>
 
-        <div className='tech-stack'> Tech Stack: {techstack} </div>
+      <p> {description} </p>
 
-        <div className='button-outline'>
-            <div className={`button ${available ? '' : 'disabled'}`}>
-                {available
-                    ? <a href={link}> CHECK IT OUT! </a>
-                    : <a href="#"> COMING SOON... </a>
-                }
-            </div>
+      <div className="tech-stack"> Tech Stack: {techstack} </div>
+
+      <div className="button-outline">
+        <div className={`button ${available ? "" : "disabled"}`}>
+          {available ? (
+            <a href={link}> CHECK IT OUT! </a>
+          ) : (
+            <a href="#"> COMING SOON... </a>
+          )}
         </div>
-        
+      </div>
     </div>
-  )
+  );
 };
 
 ProjectCard.propTypes = {
-    src: PropTypes.any.isRequired,
-    title: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-    techstack: PropTypes.string.isRequired,
-    available: PropTypes.bool.isRequired,
-    link: PropTypes.string
+  src: PropTypes.any.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  techstack: PropTypes.string.isRequired,
+  available: PropTypes.bool.isRequired,
+  link: PropTypes.string,
 };
 
-export default ProjectCard
+export default ProjectCard;
