@@ -1,0 +1,19 @@
+@import "../styles/variables";
+
+.ratings-container {
+  display: flex;
+  gap: 4px;
+
+  .circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid $dracula-dusk;
+    display: inline-block;
+
+    &.filled {
+      background-color: $dracula-dusk;
+    }
+  }
+}

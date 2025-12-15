@@ -16,7 +16,7 @@ import { ReactComponent as AwsIcon } from "../shared/icons/aws.svg";
 import { ReactComponent as DotnetIcon } from "../shared/icons/dotnet.svg";
 import { ReactComponent as SqlIcon } from "../shared/icons/sqlicon.svg";
 
-const AllSkillsIcons = () => {
+export default function AllSkillsIcons() {
   return (
     <>
       <HTMLIcon />
@@ -38,6 +38,4 @@ const AllSkillsIcons = () => {
       <SqlIcon />
     </>
   );
-};
-
-export default AllSkillsIcons;
+}
