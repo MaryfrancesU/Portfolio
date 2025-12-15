@@ -1,145 +1,28 @@
 import "./Projects.scss";
 import NavBar from "../shared/NavBar/NavBar";
-import ProjectCard from "./Card/ProjectCard";
-
-import retain from "./images/retain.png";
-import ravendesk from "./images/ravendesk.png";
-import randomizer from "./images/randomizer.png";
-import calculator from "./images/calculator.png";
-import studyspot from "./images/studyspot.png";
-import gotem from "./images/gotem.png";
-import jlptKanjiTester from "./images/jlpt-kanji-tester.png";
+import ProjectCardGroup from "./ProjectCardGroup";
+import {
+  groupProjectsGroup,
+  learningGroup,
+  mobileDevGroup,
+  webDevGroup,
+} from "./projects.data";
 
 const Projects = () => {
   return (
     <div>
       <NavBar currentPage="projects" />
       <div className="projects-container">
-        My grades and experience are one way to showcase my skills as a
-        developer, and the projects I&apos;ve built outside of work are another!
-        <div className="project-section" id="learning-section">
-          <h2> Having Fun Studying </h2>
-          <p className="section-description">
-            I love learning... and creating apps to help make the process just a
-            little more efficient!
-          </p>
+        <p className="page-description">
+          My grades and experience are one way to showcase my skills as a
+          developer, and the projects I&apos;ve built outside of school and work
+          are another!
+        </p>
 
-          <div className="section-cards">
-            <div className="section-cards--row">
-              <ProjectCard
-                src={retain}
-                title="Retain"
-                description="Flashcards are boring... what if we played a matching game instead?"
-                techstack="Ionic"
-                available={true}
-                link="https://github.com/MaryfrancesU/Retain"
-              />
-              <ProjectCard
-                src={jlptKanjiTester}
-                title="JLPT Kanji Tester"
-                description="I got tired of having to make and grade my own quizzes, so I made an app to do it for me!"
-                techstack="Next JS"
-                available={true}
-                link="https://jlpt-kanji-tester.vercel.app/"
-              />
-              <ProjectCard
-                //src={}
-                title="Testlet"
-                description="My Quizlet dupe with a few more bells and whistles."
-                techstack="React, Firebase"
-                available={false}
-              />
-            </div>
-          </div>
-        </div>
-        <div className="project-section" id="web-section">
-          <h2> Web Dev </h2>
-          <p className="section-description">This is my specialty!</p>
-
-          <div className="section-cards">
-            <div className="section-cards--row">
-              <ProjectCard
-                src={ravendesk}
-                title="RavenDesk"
-                description="The brain is a fickle mistress, so use the RavenDesk instead! -Edgar Allen Poe (probably)"
-                techstack="PHP"
-                available={true}
-                link="https://github.com/MaryfrancesU/RavenDesk"
-              />
-              <ProjectCard
-                //src={}
-                title="Mini Games"
-                description="Featuring classic games like Hangman, Tic Tac Toe, and Unscramble!"
-                techstack="Next JS"
-                available={true}
-                link="https://github.com/MaryfrancesU/Classic-Mini-Games"
-              />
-              <ProjectCard
-                //src={}
-                title="Shopaholic"
-                description="I decided to try my hand at building a shopping app. I mean Jeff Bezos did it, so how hard can it be!"
-                techstack="React, Firebase"
-                available={false}
-              />
-            </div>
-
-            {/* <div className='section-cards--row'>
-                        <ProjectCard />
-                    </div> */}
-          </div>
-        </div>
-        <div className="project-section" id="mobile-section">
-          <h2> Mobile Dev </h2>
-          <p className="section-description">
-            I dabble a little in shrinking the screen size.
-          </p>
-
-          <div className="section-cards">
-            <div className="section-cards--row">
-              <ProjectCard
-                src={randomizer}
-                title="Randomizer"
-                description="For those days you find yourself indecisive, roll a die... or open this app!"
-                techstack="Android Studio, Java"
-                available={true}
-                link="https://github.com/MaryfrancesU/Mini-Mobile-Apps/tree/Randomizer"
-              />
-              <ProjectCard
-                src={calculator}
-                title="Simple Calculator"
-                description="I made this project years ago to help me learn how to use Android Studio."
-                techstack="Android Studio, Java"
-                available={true}
-                link="https://github.com/MaryfrancesU/Mini-Mobile-Apps/tree/SimpleCalculator"
-              />
-            </div>
-          </div>
-        </div>
-        <div className="project-section" id="group-section">
-          <h2> Group Projects </h2>
-          <p className="section-description">Collaboration is my jam!</p>
-
-          <div className="section-cards">
-            <div className="section-cards--row">
-              <ProjectCard
-                src={studyspot}
-                title="StudySpot"
-                description="Ugh, the library's packed! Good thing you reserved a spot ahead of time!"
-                techstack="Flask Python, Jinja Templates"
-                available={true}
-                link="https://github.com/MaryfrancesU/StudySpot"
-              />
-              <ProjectCard
-                src={gotem}
-                title="Gotem"
-                description="Gotem allows users to quickly and efficiently schedule and obtain transportation for hospital and clinical visits."
-                techstack="React, Firebase"
-                available={true}
-                link="https://github.com/soumildatta/gotem"
-              />
-            </div>
-          </div>
-        </div>
+        <ProjectCardGroup projectGroup={learningGroup} />
+        <ProjectCardGroup projectGroup={webDevGroup} />
+        <ProjectCardGroup projectGroup={mobileDevGroup} />
+        <ProjectCardGroup projectGroup={groupProjectsGroup} />
       </div>
     </div>
   );

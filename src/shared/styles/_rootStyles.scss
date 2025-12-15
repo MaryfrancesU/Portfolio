@@ -23,7 +23,7 @@
   --variableCyan: var(--light, #699ef7) var(--dark, #{$dracula-cyan});
 
   --toggleBackground: var(--light, #ffbf71) var(--dark, #423966);
-  --cardBorderColor: var(--light, transparent) var(--dark, white);
+  --cardBorderColor: var(--light, transparent) var(--dark, #{$dracula-purple});
 
   --disabledButtonBackground: var(--light, #{$disabled-button-bg-light-mode})
     var(--dark, #{$disabled-button-bg-dark-mode});

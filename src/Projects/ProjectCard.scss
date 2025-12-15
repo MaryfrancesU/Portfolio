@@ -1,0 +1,109 @@
+@import "../shared/styles/rootStyles";
+
+.project-card {
+  width: 32%;
+  display: flex;
+  min-width: 250px;
+  min-height: 280px;
+  margin-top: 10px;
+  border-radius: 15px;
+  flex-direction: column;
+  border: solid 1px var(--cardBorderColor);
+  background-color: var(--backgroundColor);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  @include mobile {
+    height: 52vh;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+
+  & > * {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  img {
+    height: 250px;
+    min-height: 40%;
+    margin-top: 2%;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+
+  h4 {
+    margin-top: 2%;
+    margin-bottom: 0;
+    font-size: 24px;
+    color: $dracula-purple;
+  }
+
+  p {
+    margin-top: 5%;
+    margin-bottom: 0;
+  }
+
+  .tech-stack {
+    margin-top: 5%;
+    margin-bottom: 5px;
+  }
+
+  .button-outline {
+    margin: 0;
+    margin-top: auto;
+    margin-bottom: 2%;
+
+    width: 50%;
+    height: 10%;
+    padding: 2%;
+    min-height: 10%;
+    border-radius: 30px;
+    position: relative;
+    background-color: $dracula-pink;
+
+    //center
+    left: 50%;
+    transform: translateX(-50%);
+
+    .button {
+      cursor: pointer;
+      position: absolute;
+      width: 96%;
+      left: 2%;
+      height: 93%;
+      top: 4%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--backgroundColor);
+      border-radius: 30px;
+      font-size: 20px;
+
+      &:hover {
+        font-weight: bold;
+      }
+
+      a {
+        text-decoration: none;
+        color: var(--fontColor);
+      }
+    }
+
+    .disabled {
+      cursor: default;
+      background-color: var(--disabledButtonBackground);
+
+      &:hover {
+        font-weight: normal;
+      }
+
+      a {
+        color: var(--disabledButtonText);
+        cursor: default;
+      }
+    }
+  }
+}

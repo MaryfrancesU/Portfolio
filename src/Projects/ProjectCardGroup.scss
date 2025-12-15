@@ -1,0 +1,22 @@
+@import "../shared/styles/rootStyles";
+
+.card-group-container {
+  margin-top: 32px;
+  padding: 0px 16px;
+
+  h2 {
+    font-family:  'Audiowide-Header';
+    color: var(--variableCyan); 
+  }
+
+  .card-group {
+    gap: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+}

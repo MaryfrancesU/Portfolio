@@ -1,41 +1,15 @@
 @import "../shared/styles/rootStyles";
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-
 .projects-container {
-  width: 90vw;
-  margin-top: 20px;
-  margin-left: 5vw;
+  margin: 20px auto;
   text-align: center;
-  // background-color: oldlace;
+  max-width: 1280px;
 
-  .project-section {
-    margin: 20px;
-    padding: 10px;
-    // background-color: antiquewhite;
+  .page-description {
+    padding: 0px 10px;
+  }
 
-    h2 {
-      @include gradientText($default-gradient);
-    }
-
-    // .section-description {
-
-    // }
-
-    .section-cards {
-      &--row {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-
-        @include mobile {
-          flex-direction: column;
-        }
-      }
-    }
+  p {
+    font-size: 20px;
   }
 }
