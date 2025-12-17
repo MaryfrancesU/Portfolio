@@ -4,6 +4,7 @@ import randomizer from "./images/randomizer.png";
 import calculator from "./images/calculator.png";
 import studyspot from "./images/studyspot.png";
 import gotem from "./images/gotem.png";
+import minigames from "./images/minigames.png";
 import jlptKanjiTester from "./images/jlpt-kanji-tester.png";
 
 export const learningGroup = {
@@ -28,6 +29,15 @@ export const learningGroup = {
       techstack: "Next JS",
       available: true,
       link: "https://jlpt-kanji-tester.vercel.app/",
+    },
+    {
+      title: "Country Flag Whiz",
+      imageSrc: "",
+      description:
+        "And they say Americans don't care to learn about other countries!",
+      techstack: "Vite, React",
+      available: false,
+      link: "",
     },
     {
       title: "Testlet",
@@ -57,18 +67,18 @@ export const webDevGroup = {
       title: "Wishlist",
       imageSrc: "",
       description: "Getting all the presents you want has never been easier!",
-      techstack: "React",
+      techstack: "Azure, React",
       available: false,
       link: "",
     },
     {
       title: "Mini Games",
-      imageSrc: "",
+      imageSrc: minigames,
       description:
         "Featuring classic games like Hangman, Tic Tac Toe, and Unscramble!",
-      techstack: "Next JS",
+      techstack: "Vite, React",
       available: true,
-      link: "https://github.com/MaryfrancesU/Classic-Mini-Games",
+      link: "https://classic-mini-games.vercel.app/",
     },
     {
       title: "Shopaholic",
