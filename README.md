@@ -1,6 +1,8 @@
 # My Portfolio
 This project was created to showcase some of my skills as a software engineer. Check it out [here](https://maryfrancesu.github.io/Portfolio/)!
 
+**Note to Potential Employers:** I am painfully aware of how outdated this tech stack is, and there are a number of aspects of the frontend architecture and experience that could be improved... I made this back when I was still a college student and very new to web development. I promise I'll get around to migrating this to Vite or something soon! 
+
 <br>
 
 ## 開発者用
