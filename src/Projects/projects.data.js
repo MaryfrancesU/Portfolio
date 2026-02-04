@@ -6,6 +6,7 @@ import studyspot from "./images/studyspot.png";
 import gotem from "./images/gotem.png";
 import minigames from "./images/minigames.png";
 import jlptKanjiTester from "./images/jlpt-kanji-tester.png";
+import comingSoonImg from "./images/coming soon.png";
 
 export const learningGroup = {
   title: "Having Fun Studying",
@@ -32,7 +33,7 @@ export const learningGroup = {
     },
     {
       title: "Country Flag Whiz",
-      imageSrc: "",
+      imageSrc: comingSoonImg,
       description:
         "And they say Americans don't care to learn about other countries!",
       techstack: "Vite, React",
@@ -41,7 +42,7 @@ export const learningGroup = {
     },
     {
       title: "Testlet",
-      imageSrc: "",
+      imageSrc: comingSoonImg,
       description: "My Quizlet dupe with a few more bells and whistles.",
       techstack: "React, Vercel",
       available: false,
@@ -65,7 +66,7 @@ export const webDevGroup = {
     },
     {
       title: "Wishlist",
-      imageSrc: "",
+      imageSrc: comingSoonImg,
       description: "Getting all the presents you want has never been easier!",
       techstack: "Azure, React",
       available: false,
@@ -82,7 +83,7 @@ export const webDevGroup = {
     },
     {
       title: "Shopaholic",
-      imageSrc: "",
+      imageSrc: comingSoonImg,
       description: "I decided to try my hand at building a shopping app!",
       techstack: "React, Firebase",
       available: false,
